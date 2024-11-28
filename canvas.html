@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Using Js</title>
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    min-height: 100%;
+}
+body{
+    background-color: lightgrey;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    min-height: 100dvh;
+    section{
+        /* min-width: 320px; */
+        width: 100%;
+        height: 70vh;
+        background-color: beige;
+        box-shadow: 0 0 10px bisque inset; 
+        margin: 0 auto;
+        border-radius: 5px;
+        border: 2px solid black;
+        overflow: hidden;
+        position: relative;
+    }
+
+    button{
+        max-width: max-content;
+        padding: 5px;
+        text-transform: uppercase;
+        font-size: 22px;
+        background-color: orange;
+        color: white;
+        letter-spacing: 2px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin: 0 auto;
+        &:hover{
+            background-color: grey;
+        }
+    }
+
+    button:focus{
+        background-color: red;
+    }
+}
+
+.ele{
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Drawing Canvas</h1>
+        <section>
+
+        </section>
+        <button>
+            clear
+        </button>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
